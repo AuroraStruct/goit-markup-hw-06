@@ -710,7 +710,7 @@ color: #434455;
 
 @media screen and (min-width: 1158px) {
   .section-portfolio {
-    padding: 120px 0;
+    padding: 100px 0;
   }
 
   .portfolio-list {
@@ -732,14 +732,16 @@ color: #434455;
 }
 
 .footer-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 72px;
+max-width: 1158px;
+margin: 0 auto;
+padding-left: 15px;
+padding-right: 15px;
+flex-wrap: nowrap;
+gap: 0; 
 }
 /* Centering the logo and text for mobile view */
 .footer-column-wrap {
-  text-align: center; 
+  margin-right: 80;
 }
 
 .footer-logo {
@@ -913,50 +915,52 @@ color: #fff;
 
 /* --- DESKTOP - FOOTER ( from 1158px ... ) --- */
 @media screen and (min-width: 1158px) {
-  .footer {
-    padding: 100px 0;
-  }
-
-  .footer-container {
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-    flex-wrap: nowrap; /* Align everything in one row */
-    gap: 0;
-  }
-
-  .footer-column-wrap {
-    margin-right: 80px;
-  }
-
-  .footer-logo {
-    margin-bottom: 16px;
-    padding: 0;
-  }
-
-  .footer-logo-span {
-    margin-bottom: 16px;
-  }
-.footer-logo-span {
-
-  color:#f4f4fd;
+.footer {
+padding: 100px 0;
 }
-  .footer-text {
-    width: 264px;
-  }
 
-  .footer-column-wrap {
-    margin-right: 80px;
-  }
+.footer-container {
+max-width: 1158px;
+margin: 0 auto;
+padding-left: 15px;
+padding-right: 15px;
+display: flex;
+align-items: flex-start;
+gap: 120px; /* Main spacing between all blocks */
+flex-wrap: nowrap;
+}
 
-  .footer-subscribe {
-    margin-left: auto;
-  }
+/* Logo + text block */
+.footer-column-wrap:first-child {
+margin-right: 0;
+}
 
-  .footer-column-wrap .footer-form {
-    width: 453px;
-  }
+/* Social media block */
+.footer-column-wrap:nth-child(2) {
+margin-right: 0;
+}
+
+.footer-logo {
+margin-bottom: 16px;
+padding: 0;
+}
+
+.footer-logo-span {
+color: #f4f4fd;
+}
+
+.footer-text {
+width: 264px;
+}
+
+/* Subscribe block */
+.footer-subscribe {
+margin-left: 0; /* Removed auto */
+}
+
+.footer-column-wrap .footer-form {
+width: 453px;
+}
 }
 
 /* ------ MODAL WINDOW ------ */
