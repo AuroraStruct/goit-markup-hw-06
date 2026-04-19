@@ -26,10 +26,12 @@
     <!--Header-->
     <header class="header">
       <div class="container header-container">
-        <nav class="page-nav">
-          <a href="./index.html" class="header-logo"
+ <a href="./index.html" class="header-logo"
             >Web<span class="header-logo-span">Studio</span>
           </a>
+          <!-- Navigation is hidden on mobile  -->
+
+        <nav class="page-nav">
           <ul class="header-list">
             <li class="header-item">
               <a class="header-link line" href="">Studio</a>
@@ -56,6 +58,11 @@
             </li>
           </ul>
         </address>
+         <button type="button" class="burger-menu-btn">
+          <svg class="burger-menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!--Hero section-->
@@ -130,7 +137,8 @@
           <ul class="team-list">
             <li class="team-item">
               <img
-                src="./images/employee1.jpg"
+                src="./images/team-pic1st1x.jpg"
+                srcset="./images/team-pic1st1x.jpg 1x, ./images/team-pic1st2x.jpg 2x"
                 width="264"
                 height="260"
                 alt="Photo of a man"
@@ -174,7 +182,8 @@
 
             <li class="team-item">
               <img
-                src="./images/employee2.jpg"
+                src="./images/team-pic2nd1x.jpg"
+                srcset="./images/team-pic2nd1x.jpg 1x, ./images/team-pic2nd2x.jpg 2x"
                 width="264"
                 height="260"
                 alt="Photo of a man"
@@ -183,29 +192,29 @@
               <div class="team-member-text">
                 <h3 class="team-subtitles">Tom Ford</h3>
                 <p class="team-role-text">Frontend Developer</p>
-                <ul class="team-icon-list">
-                  <li class="team-icon-item">
+                <ul class="social-icons-list">
+                  <li class="team-item-icon">
                     <a href="" class="team-icon-link" target="_blank"
                       ><svg class="team-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-icon-item">
+                  <li class="team-item-icon">
                     <a href="" class="team-icon-link" target="_blank"
                       ><svg class="team-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-icon-item">
+                  <li class="team-item-icon">
                     <a href="" class="team-icon-link" target="_blank"
                       ><svg class="team-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-icon-item">
+                  <li class="team-item-icon">
                     <a href="" class="team-icon-link" target="_blank"
                       ><svg class="team-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-linkedin"></use>
@@ -218,7 +227,8 @@
 
             <li class="team-item">
               <img
-                src="./images/employee3.jpg"
+                src="./images/team-pic3rd1x.jpg"
+                srcset="./images/team-pic3d1x.jpg 1x, ./images/team-pic3rd2x.jpg 2x"
                 width="264"
                 height="260"
                 alt="Photo of a woman"
@@ -227,29 +237,29 @@
               <div class="team-member-text">
                 <h3 class="team-subtitles">Camila Garcia</h3>
                 <p class="team-role-text">Marketing</p>
-                <ul class="team-icon-list">
-                  <li class="team-icon-item">
+                <ul class="social-icons-list">
+                  <li class="team-item-icon">
                     <a href="" class="team-icon-link" target="_blank"
                       ><svg class="team-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-icon-item">
+                  <li class="team-item-icon">
                     <a href="" class="team-icon-link" target="_blank">
                       <svg class="team-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-icon-item">
+                  <li class="team-item-icon">
                     <a href="" class="team-icon-link" target="_blank">
                       <svg class="team-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-icon-item">
+                  <li class="team-item-icon">
                     <a href="" class="team-icon-link" target="_blank">
                       <svg class="team-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-linkedin"></use>
@@ -262,7 +272,8 @@
 
             <li class="team-item">
               <img
-                src="./images/employee4.jpg"
+                src="./images/team-pic4th1x.jpg"
+                srcset="./images/team-pic4th1x.jpg 1x, ./images/team-pic4th2x.jpg 2x"
                 width="264"
                 height="260"
                 alt="Photo of a man"
@@ -272,29 +283,29 @@
                 <h3 class="team-subtitles">Daniel Wilson</h3>
                 <p class="team-role-text">UI Designer</p>
 
-                <ul class="team-icon-list">
-                  <li class="team-icon-item">
+                <ul class="social-icons-list">
+                  <li class="team-item-icon">
                     <a href="" class="team-icon-link" target="_blank">
                       <svg class="team-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-icon-item">
+                  <li class="team-item-icon">
                     <a href="" class="team-icon-link" target="_blank">
                       <svg class="team-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-icon-item">
+                  <li class="team-item-icon">
                     <a href="" class="team-icon-link" target="_blank">
                       <svg class="team-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-icon-item">
+                  <li class="team-item-icon">
                     <a href="" class="team-icon-link" target="_blank">
                       <svg class="team-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-linkedin"></use>
@@ -316,14 +327,17 @@
             <li class="portfolio-card">
               <div class="portfolio-img-thumb">
                 <img
-                  src="./images/projectcard.jpg"
+                  src="./images/port-pic1st1x.jpg"
+                   srcset="
+                    ./images/port-pic1st1x.jpg    1x,
+                    ./images/port-pic1st2x.jpg 2x
+                  "
                   alt="Banking App"
                   width="360"
                   height="300"
                   class="portfolio-image"
                 />
                 <p class="portfolio-overley-description">
-                  <!-- ← CHANGE THIS LINE -->
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
@@ -339,14 +353,17 @@
             <li class="portfolio-card">
               <div class="portfolio-img-thumb">
                 <img
-                  src="./images/smartphone.jpg"
+                  src="./images/port-pic2nd1x.jpg"
+                   srcset="
+                    ./images/port-pic2nd1x.jpg    1x,
+                    ./images/port-pic2nd2x.jpg 2x
+                  "
                   alt="Cashless Payment"
                   width="360"
                   height="300"
                   class="portfolio-image"
                 />
                 <p class="portfolio-overley-description">
-                  <!-- ← CHANGE THIS LINE -->
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
@@ -362,14 +379,17 @@
             <li class="portfolio-card">
               <div class="portfolio-img-thumb">
                 <img
-                  src="./images/computer.jpg"
+                  src="./images/port-pic3rd1x.jpg"
+                   srcset="
+                    ./images/port-pic3rd1x.jpg    1x,
+                    ./images/port-pic3rd2x.jpg 2x
+                  "
                   alt="Meditation App"
                   width="360"
                   height="300"
                   class="portfolio-image"
                 />
                 <p class="portfolio-overley-description">
-                  <!-- ← CHANGE THIS LINE -->
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
@@ -385,14 +405,17 @@
             <li class="portfolio-card">
               <div class="portfolio-img-thumb">
                 <img
-                  src="./images/car.jpg"
+                  src="./images/port-pic4th1x.jpg"
+                   srcset="
+                    ./images/port-pic4th1x.jpg    1x,
+                    ./images/port-pic4th2x.jpg 2x
+                  "
                   alt="Photo of car"
                   width="360"
                   height="300"
                   class="portfolio-image"
                 />
                 <p class="portfolio-overley-description">
-                  <!-- ← CHANGE THIS LINE -->
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
@@ -408,14 +431,17 @@
             <li class="portfolio-card">
               <div class="portfolio-img-thumb">
                 <img
-                  src="./images/iphone.jpg"
+                  src="./images/port-pic5th1x.jpg"
+                   srcset="
+                    ./images/port-pic5th1x.jpg    1x,
+                    ./images/port-pic5th2x.jpg 2x
+                  "
                   alt="Screen Illustrations"
                   width="360"
                   height="300"
                   class="portfolio-image"
                 />
                 <p class="portfolio-overley-description">
-                  <!-- ← CHANGE THIS LINE -->
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
@@ -431,14 +457,17 @@
             <li class="portfolio-card">
               <div class="portfolio-img-thumb">
                 <img
-                  src="./images/woman.jpg"
+                  src="./images/port-pic6th1x.jpg"
+                   srcset="
+                    ./images/port-pic6th1x.jpg    1x,
+                    ./images/port-pic6th2x.jpg 2x
+                  "
                   alt="Photo of woman"
                   width="360"
                   height="300"
                   class="portfolio-image"
                 />
                 <p class="portfolio-overley-description">
-                  <!-- ← CHANGE THIS LINE -->
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
@@ -458,7 +487,7 @@
       <div class="container footer-container">
         <!-- Logo and description column -->
         <div class="footer-column-wrap">
-          <a href="./index.html" class="footer-logo">
+          <a href="./index.html" class="header-logo footer-logo">
             Web<span class="footer-logo-span">Studio</span>
           </a>
           <p class="footer-text">
@@ -584,7 +613,7 @@
               </svg>
             </div>
           </div>
-          <div class="form-field textarea">
+          <div class="form-field">
             <label class="modal-label" for="user-comments">Comment</label>
             <textarea
               class="modal-comment"
@@ -612,6 +641,74 @@
           </div>
           <button type="submit" class="modal-submit-btn">Send</button>
         </form>
+      </div>
+    </div>
+     <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+      <div class="container mobile-menu-container">
+        <!-- Close menu button -->
+        <button type="button" class="close-icon-btn">
+          <svg class="menu-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <nav class="mob-nav">
+          <ul class="mob-nav-list">
+            <li>
+              <a href="./index.html" class="mob-nav-link current">Studio</a>
+            </li>
+            <li><a href="" class="mob-nav-link">Portfolio</a></li>
+            <li><a href="" class="mob-nav-link">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <div class="mob-contacts-wrap">
+          <address class="mobile-contacts">
+            <ul class="mobile-contacts-list">
+              <li>
+                <a href="tel:+110001111111" class="mobile-contacts-link accent"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="mobile-contacts-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-social-list">
+            <li class="mobile-social-item">
+              <a href="" class="mob-social-link">
+                <svg class="mobile-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="" class="mob-social-link">
+                <svg class="mobile-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="" class="mob-social-link">
+                <svg class="mobile-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="" class="mob-social-link">
+                <svg class="mobile-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>
