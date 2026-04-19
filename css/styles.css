@@ -374,9 +374,6 @@ margin: 0 auto 72px auto;
     margin-bottom: 48px;
   }
 }
-.hero-button {
-    padding: 16px 16px;
-}
 
 /* ---- MOB - OUR FEATURES ---- */
 
@@ -862,7 +859,6 @@ color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 8px;
   line-height: 1.5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -876,7 +872,7 @@ color: #fff;
   .footer-container {
     padding-left: 16px;
     padding-right: 16px;
-    width: 584px;
+   max-width: 584px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -922,7 +918,7 @@ color: #fff;
   }
 
   .footer-container {
-    width: 1158px;
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -931,7 +927,7 @@ color: #fff;
   }
 
   .footer-column-wrap {
-    margin-right: 120px;
+    margin-right: 80px;
   }
 
   .footer-logo {
@@ -1303,15 +1299,15 @@ color: #fff;
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-close-btn:hover,
-.menu-close-btn:focus {
+.close-icon-btn:hover,
+.close-icon-btn:focus {
   background-color: #404bbf; /* Turns dark blue when hovered */
   border: none;
   fill: #fff; /* The icon inside turns white */
 }
 
-.menu-close-btn:hover .menu-close-icon,
-.menu-close-btn:focus .menu-close-icon {
+.close-icon-btn:hover .menu-close-icon,
+.close-icon-btn:focus .menu-close-icon {
   fill: #fff; /* Color on hover */
 }
 
@@ -1335,7 +1331,7 @@ color: #fff;
   text-decoration: none;
 }
 
-.mobi-nav-link.current {
+.mob-nav-link.current {
   color: #404bbf;
 }
 
