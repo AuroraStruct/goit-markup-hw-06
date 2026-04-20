@@ -526,6 +526,12 @@ color: #434455;
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.team-item {
+
+max-width: 264px;
+max-height: 260px;
+}
+
 /* --- TABLET - OUR TEAM --- ( from 768px...) --- */
 @media screen and (min-width: 768px) {
  
@@ -710,7 +716,7 @@ color: #434455;
 
 @media screen and (min-width: 1158px) {
   .section-portfolio {
-    padding: 100px 0;
+    padding: 120px 0;
   }
 
   .portfolio-list {
@@ -732,19 +738,14 @@ color: #434455;
 }
 
 .footer-container {
-display: flex;
-flex-direction: column;
-align-items: center;
-max-width: 1158px;
-margin: 0 auto;
-padding-left: 15px;
-padding-right: 15px;
-flex-wrap: nowrap;
-gap: 72px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
 }
 /* Centering the logo and text for mobile view */
 .footer-column-wrap {
-  margin-right: 80;
+  margin-right: 80px;
 }
 
 .footer-logo {
