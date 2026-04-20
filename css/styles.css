@@ -440,7 +440,7 @@ color: #434455;
     row-gap: 72px;
   }
   .features {
-     min-height: 504px;                 /* fixed hight */
+     height: 504px;                 /* fixed hight */
   
 
 }
@@ -738,12 +738,11 @@ max-width: 264px;
 
 .footer-container {
   display: flex;
-  flex-wrap: wrap;         /* Allows blocks to wrap to a new line */
-  justify-content: center; /* Centers blocks horizontally */
-  align-items: center;     /* Centers blocks vertically (if needed) */
-  gap: 80px;               /* Creates space ONLY BETWEEN blocks */
-  text-align: center;      /* Centers text inside the blocks */
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
 }
+
 
 .footer-logo {
   display: block;
