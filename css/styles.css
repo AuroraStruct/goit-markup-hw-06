@@ -400,7 +400,6 @@ margin: 0 auto 72px auto;
   display: flex;
   flex-direction: column;
   gap: 72px;
-  align-items: center;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -430,6 +429,10 @@ color: #434455;
 
 }
 
+ .features-item {
+  width: 100%;
+}
+
 /* --- TABLET - OUR FEATURES ( from 768px ...) --- */
 
 @media screen and (min-width: 768px) {
@@ -439,11 +442,7 @@ color: #434455;
     column-gap: 24px;
     row-gap: 72px;
   }
-  .features {
-     height: 504px;                 /* fixed hight */
-  
 
-}
   /* Calculation formula to arrange 4 items by 2х2 */
   .features-item {
     width: calc((100% - 24px) / 2);
@@ -453,6 +452,10 @@ color: #434455;
     text-align: left; /* Allign text to the left side */
   }
 } 
+
+ .features-item {
+  width: 100%;
+}
 
 
 /* --- DESKTOP - OUR FEATURES ( from 1158px ...) --- */
@@ -481,6 +484,7 @@ color: #434455;
     width: calc((100% - 3 * 24px) / 4); /* Making 4 columns */
   }
 
+
   .features-subtitles {
     font-weight: 500;
     font-size: 20px;
@@ -490,7 +494,7 @@ color: #434455;
   .features-item-text {
     font-weight: 400;
   }
-}
+
 
 /*------- MOB - OUR TEAM ------ */
 .team {
@@ -768,7 +772,6 @@ max-width: 264px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  margin-top: 16px;       /* Spacing between heading and paragraph. */
   text-align: left;       /* Push text to the left */
   max-width: 264px;
 }
