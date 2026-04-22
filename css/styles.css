@@ -10,12 +10,6 @@ body {
   background-color: #fff;
 }
 
-.container {
-  max-width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 h1,
 h2,
 h3,
@@ -36,27 +30,6 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-p {
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -67,21 +40,20 @@ button {
   cursor: pointer;
   font-family: inherit;
 }
-/* Mob container changes */
 
+/* ---- Mob container ---- */
 .container {
-    max-width: 320px;
-    padding: 0 16px;
-    margin: 0 auto;
+  max-width: 320px;
+  padding: 0 16px;
+  margin: 0 auto;
 }
-/* Tablet container changes */
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
 }
 
-/* Desktop container changes */
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
@@ -90,9 +62,7 @@ button {
   }
 }
 
-
-/* ------ MOB HEADER  ------ */
-
+/* ------ MOB HEADER ------ */
 .header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow:
@@ -121,21 +91,18 @@ button {
 }
 
 .header-logo-span {
-font-weight: 700;
-font-size: 18px;
-line-height: 1.17;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #2e2f42;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #2e2f42;
 }
 
-/* Hidding Navigation & Address on Mobile  */
 .page-nav,
 .contacts {
   display: none;
 }
-
-/* Styles for Burger button */
 
 .burger-menu-btn {
   background-color: transparent;
@@ -143,16 +110,16 @@ color: #2e2f42;
   padding: 0;
   line-height: 0;
 }
+
 .burger-menu-icon {
- display: block;
+  display: block;
   fill: #2f2f37;
 }
 
-/* --- TABLET HEADER from768px --- */
-
+/* --- TABLET HEADER (768px+) --- */
 @media screen and (min-width: 768px) {
   .burger-menu-btn {
-    display: none; /* Hiding burger */
+    display: none;
   }
 
   .header-list {
@@ -174,21 +141,18 @@ color: #2e2f42;
   .page-nav,
   .contacts {
     display: block;
-     /* Show the menue and contacts */
   }
 
   .header-link {
-font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  display: block;
-  padding: 24px 0;
-  position: relative;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    display: block;
+    padding: 24px 0;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .contacts-list {
@@ -202,8 +166,6 @@ font-weight: 500;
   .header-link.line {
     color: #404bbf;
   }
-
-  /* Decorative page underline */
 
   .header-link.line::after {
     content: "";
@@ -225,14 +187,12 @@ font-weight: 500;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-/* --- DESKTOP HEADER (from 1158px) --- */
 
+/* --- DESKTOP HEADER (1158px+) --- */
 @media screen and (min-width: 1158px) {
   .header-logo {
     margin-right: 76px;
   }
-
-  /* Contacts are inline on desktop  */
 
   .contacts-list {
     flex-direction: row;
@@ -253,27 +213,20 @@ font-weight: 500;
   }
 }
 
-/*----- MAIN----- */
-
-/* ---- MOB HERO SECTION  ---- */
-
+/* ---- MOB HERO ---- */
 .hero {
-  /* Wallpaper for Mob 1x*/
-  max-width: 320px;
-  height: 432px;
-  margin: 0 auto;
-  padding: 72px 0;
-  background-color: #2E2F42B2;
+  background-color: #2e2f42;
   background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url("../images/hero-bg-mob1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
- 
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 72px 0;
 }
 
-/* Mobile HiDPI (Retina) (x2) */
 @media (min-resolution: 192dpi) {
   .hero {
     background-image:
@@ -283,47 +236,38 @@ font-weight: 500;
 }
 
 .hero-title {
-
-font-weight: 700;
-font-size: 36px;
-line-height: 1.11;
-letter-spacing: 0.02em;
-text-align: center;
-color: #fff;
- /* Text wrap to match design in mockup */
-max-width: 216px;
-margin: 0 auto 72px auto;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+  max-width: 216px;
+  margin: 0 auto 72px auto;
 }
 
 .hero-button {
   display: block;
-  border-radius: 4px;
-  padding: 16px 32px;
-  min-width: 169px;
-  height: 56px;
-  border: none;
-  cursor: pointer;
-  /* Extra centering insurance */
   margin: 0 auto;
-
-
+  padding: 16px 32px;
+  border: none;
+  border-radius: 4px;
   color: #ffffff;
   background-color: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-
+  min-width: 169px;
+  height: 56px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: #404BBF;
+  background-color: #404bbf;
 }
-
-/* --- TABLET  HERO SECTION ( from 768px ...) --- */
 
 @media screen and (min-width: 768px) {
   .hero {
@@ -343,15 +287,12 @@ margin: 0 auto 72px auto;
   }
 
   .hero-title {
-  
-   font-size: 56px;
-   line-height: 1.07;
-   max-width: 496px;
-   margin-bottom: 36px;
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin-bottom: 36px;
   }
 }
-
-/* --- DESKTOP HERO SECTION ( from 1158px...) --- */
 
 @media screen and (min-width: 1158px) {
   .hero {
@@ -375,8 +316,7 @@ margin: 0 auto 72px auto;
   }
 }
 
-/* ---- MOB - OUR FEATURES ---- */
-
+/* ---- MOB FEATURES ---- */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -390,22 +330,17 @@ margin: 0 auto 72px auto;
   overflow: hidden;
 }
 
-
 .features {
-   padding-top: 96px;   /* top spacing */
-  padding-bottom: 96px; /* bottom spacing */
+  padding: 96px 0;
 }
 
 .features-list {
   display: flex;
   flex-direction: column;
   gap: 72px;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
+/* Hidden on mobile & tablet — overridden at desktop */
 .features-icon-wrap {
   display: none;
 }
@@ -421,50 +356,32 @@ margin: 0 auto 72px auto;
 }
 
 .features-item-text {
-
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-color: #434455;
-
+  font-weight: 500;
+  color: #434455;
 }
-
- .features-item {
-  width: 100%;
-}
-
-/* --- TABLET - OUR FEATURES ( from 768px ...) --- */
 
 @media screen and (min-width: 768px) {
   .features-list {
     flex-direction: row;
-    flex-wrap: wrap; /* To group Items into 2 columns x2  */
+    flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
   }
 
-  /* Calculation formula to arrange 4 items by 2х2 */
   .features-item {
     width: calc((100% - 24px) / 2);
   }
 
   .features-subtitles {
-    text-align: left; /* Allign text to the left side */
+    text-align: left;
   }
-} 
-
- .features-item {
-  width: 100%;
 }
 
-
-/* --- DESKTOP - OUR FEATURES ( from 1158px ...) --- */
 @media screen and (min-width: 1158px) {
   .features {
     padding: 120px 0;
   }
-}
-  /* Icons Appears only on DESKTOP */
+
   .features-icon-wrap {
     display: flex;
     align-items: center;
@@ -481,9 +398,8 @@ color: #434455;
   }
 
   .features-item {
-    width: calc((100% - 3 * 24px) / 4); /* Making 4 columns */
+    width: calc((100% - 3 * 24px) / 4);
   }
-
 
   .features-subtitles {
     font-weight: 500;
@@ -494,16 +410,15 @@ color: #434455;
   .features-item-text {
     font-weight: 400;
   }
+}
 
-
-/*------- MOB - OUR TEAM ------ */
+/* ------- MOB TEAM ------ */
 .team {
   background-color: #f4f4fd;
   padding: 96px 0;
 }
 
 .team-title {
-  
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -530,46 +445,41 @@ color: #434455;
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.team-item {
-
-max-width: 264px;
-}
-
-/* --- TABLET - OUR TEAM --- ( from 768px...) --- */
+/* --- TABLET TEAM (768px+) --- */
 @media screen and (min-width: 768px) {
- 
+  /* Separate container class — isolates team section width from global .container */
+  .team-container {
+    max-width: 584px;
+  }
+
   .team-list {
     flex-direction: row;
-    flex-wrap: wrap; /* Center cards in a 2x2 grid*/
-    justify-content: center; 
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 64px 24px;
   }
 
   .team-item {
     width: 264px;
-    height: 428px;  
   }
 }
-
-/* --- DESKTOP - OUR TEAM ( from 1158px...) --- */
 
 @media screen and (min-width: 1158px) {
   .team {
     padding: 120px 0;
   }
 
-  .container {
-    max-width: 1158px; /* Back to the Standard width of the Desktop */
+  .team-container {
+    max-width: 1158px;
   }
 
   .team-list {
-    gap: 24px; /* All 4 pics in one raw */
+    gap: 24px;
   }
 }
 
-/* Team member content under each photo */
 .team-member-text {
-  padding: 32px 16px 32px 16px;  /* Apply top/bottom padding from the mockup */
+  padding: 32px 16px;
   text-align: center;
 }
 
@@ -579,7 +489,7 @@ max-width: 264px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-bottom: 8px; /* Distance to job title */
+  margin-bottom: 8px;
 }
 
 .team-role-text {
@@ -593,16 +503,15 @@ max-width: 264px;
 .social-icons-list {
   display: flex;
   justify-content: center;
-  gap: 24px;               
+  gap: 24px;
   padding: 0;
   margin: 0;
   list-style: none;
-
 }
 
 .team-item-icon {
-  min-width: 40px;
-  min-height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .team-icon-link {
@@ -614,7 +523,6 @@ max-width: 264px;
   align-items: center;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  flex-shrink: 0;
 }
 
 .team-icon-link:hover,
@@ -622,10 +530,13 @@ max-width: 264px;
   background-color: #404bbf;
 }
 
-.team-icon-link {
+.team-icon {
   fill: #f4f4fd;
+  width: 16px;
+  height: 16px;
 }
-/* ---- MOB - Our Portfolio (from 320px...)----- */
+
+/* ---- MOB PORTFOLIO ---- */
 .section-portfolio {
   padding: 96px 0;
 }
@@ -642,10 +553,9 @@ max-width: 264px;
 }
 
 .portfolio-list {
- display: flex;
-  flex-direction: column;   /* cards in column */
-  gap: 48px;                /* distance between cards */
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -660,14 +570,6 @@ max-width: 264px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-card:hover {
-  box-shadow:
-    0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
-/* Overlay (Point D1) — works everywhere */
 .portfolio-img-thumb {
   position: relative;
   overflow: hidden;
@@ -698,24 +600,18 @@ max-width: 264px;
   border-top: none;
 }
 
-/* --- TABLET - OUR PORTFOLIO ( from 768px ...) --- */
 @media screen and (min-width: 768px) {
-  .portfolio-list { 
+  .portfolio-list {
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
   }
 
   .portfolio-card {
-    width: calc((100% - 24px) / 2); /* 2 columns */
+    width: calc((100% - 24px) / 2);
   }
 }
-
-/* --- DESKTOP -OUR PORTFOLIO (from 1158px....) --- */
 
 @media screen and (min-width: 1158px) {
   .section-portfolio {
@@ -728,13 +624,12 @@ max-width: 264px;
   }
 
   .portfolio-card {
-    width: calc((100% - 48px) / 3); /* Creates 3 columns */
+    width: calc((100% - 48px) / 3);
     box-shadow: none;
   }
 }
 
-/* ----- MOB-FOOTER (from 320px ...) ----- */
-
+/* ----- MOB FOOTER ----- */
 .footer {
   background-color: #2e2f42;
   padding: 96px 0;
@@ -747,9 +642,15 @@ max-width: 264px;
   gap: 72px;
 }
 
+/* Logo+text column: centered on mobile */
+.footer-column-wrap {
+  text-align: center;
+}
 
 .footer-logo {
-  display: block;
+  /* inline-block so text-align:center on parent centers it,
+     and margin-bottom creates the 16px gap to the text below */
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -758,22 +659,20 @@ max-width: 264px;
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
-  text-align: center;
-  /* margin-bottom:16px; */
 }
-
 
 .footer-logo-span {
-color: #f4f4fd;
+  color: #f4f4fd;
 }
+
 .footer-text {
- font-weight: 400;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  text-align: left;       /* Push text to the left */
   max-width: 264px;
+  text-align: left;
 }
 
 .footer-description,
@@ -784,8 +683,7 @@ color: #f4f4fd;
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
-  width: 100%; 
-  text-align: center; 
+  text-align: center;
 }
 
 .footer-icon-list {
@@ -803,19 +701,18 @@ color: #f4f4fd;
   justify-content: center;
   width: 40px;
   height: 40px;
-  background-color: #4d5ae5; /* blue color circle */
+  background-color: #4d5ae5;
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Hover effect: According to the layout, this should be green in the footer */
 .footer-icon-link:hover,
 .footer-icon-link:focus {
   background-color: #31d0aa;
 }
 
 .footer-icon {
-  fill: #f4f4fd; /* Makes icon white color */
+  fill: #f4f4fd;
 }
 
 .footer-subscribe {
@@ -824,13 +721,12 @@ color: #f4f4fd;
 
 .footer-form {
   display: flex;
-  flex-direction: column; /* Makes Input and button as a column, input under button */
+  flex-direction: column;
   align-items: center;
   gap: 16px;
 }
 
 .footer-input {
-  width: 100%;
   width: 288px;
   height: 40px;
   border: 1px solid #ffffff;
@@ -844,13 +740,12 @@ color: #f4f4fd;
   outline: none;
 }
 
-/* Placeholder styles (for the word E-mail)*/
 .footer-input::placeholder {
-font-weight: 400;
-font-size: 12px;
-line-height: 2;
-letter-spacing: 0.04em;
-color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
 }
 
 .footer-subs-btn {
@@ -872,36 +767,31 @@ color: #fff;
 }
 
 .footer-subs-icon {
-  fill: #ffffff; /* Makes Icon white color */
+  fill: #ffffff;
   margin-left: 16px;
 }
-/* ----- TABLET-FOOTER (from 320px ...) ----- */
+
+/* ----- TABLET FOOTER (768px+) ----- */
 @media screen and (min-width: 768px) {
   .footer-container {
     padding-left: 16px;
     padding-right: 16px;
-   max-width: 584px;
+    width: 584px;
     margin: 0 auto;
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap; /* puts 4 blocks into 2 in each row  */
+    flex-wrap: wrap;
     align-items: baseline;
     gap: 72px 24px;
   }
 
   .footer-column-wrap {
-    text-align: start;
+    text-align: left;
   }
 
   .footer-logo {
-    display: block;
-    margin:0 auto 16px auto;
+    /* 16px gap between logo and footer text */
     margin-bottom: 16px;
     padding: 0;
-  }
-
-  .footer-column-wrap {
-    text-align: left;
   }
 
   .footer-description,
@@ -910,10 +800,9 @@ color: #fff;
   }
 
   .footer-form {
-    display: flex;
     flex-direction: row;
     width: 100%;
-    gap: 24px; /* Input-to-button spacing */
+    gap: 24px;
   }
 
   .footer-input {
@@ -921,57 +810,49 @@ color: #fff;
   }
 }
 
-/* --- DESKTOP - FOOTER ( from 1158px ... ) --- */
+/* --- DESKTOP FOOTER (1158px+) --- */
 @media screen and (min-width: 1158px) {
-.footer {
-padding: 100px 0;
-}
+  .footer {
+    padding: 100px 0;
+  }
 
-.footer-container {
-max-width: 1158px;
-margin: 0 auto;
-padding-left: 15px;
-padding-right: 15px;
-display: flex;
-align-items: flex-start;
-gap: 120px; /* Main spacing between all blocks */
-flex-wrap: nowrap;
-}
+  .footer-container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
 
-/* Logo + text block */
-.footer-column-wrap:first-child {
-margin-right: 0;
-}
+  /* 120px between logo block and social block */
+  .footer-column-wrap:first-child {
+    margin-right: 120px;
+  }
 
-/* Social media block */
-.footer-column-wrap:nth-child(2) {
-margin-right: 0;
-}
+  /* 80px between social block and subscribe block */
+  .footer-column-wrap:nth-child(2) {
+    margin-right: 80px;
+  }
 
-.footer-logo {
-margin-bottom: 16px;
-padding: 0;
-}
+  .footer-logo {
+    margin-bottom: 16px;
+    padding: 0;
+  }
 
+  .footer-text {
+    width: 264px;
+  }
 
-.footer-text {
-width: 264px;
-}
-
-/* Subscribe block */
-.footer-subscribe {
-margin-left: 0; /* Removed auto */
-}
-
-.footer-column-wrap .footer-form {
-width: 453px;
-}
+  /* Subscribe block snaps to the far right */
+  .footer-subscribe {
+    margin-left: auto;
+  }
 }
 
 /* ------ MODAL WINDOW ------ */
-
 .backdrop {
- background-color: rgba(46, 47, 66, 0.4);
+  background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
   top: 0;
   left: 0;
@@ -980,9 +861,9 @@ width: 453px;
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-  transition-property: opacity, visibility;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-open {
@@ -1000,9 +881,8 @@ width: 453px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.9);
-  /* Flexible width on mobile devices */
-  width: calc(100% - 32px); /* 16px padding from both sides */
-  max-width: 288px; 
+  width: calc(100% - 32px);
+  max-width: 288px;
   min-height: 584px;
   background-color: #fcfcfc;
   box-shadow:
@@ -1015,34 +895,28 @@ width: 453px;
 }
 
 .modal-close-btn {
-  /* Positioning relative to the .modal parent*/
   position: absolute;
   top: 24px;
   right: 24px;
-  /* Making button perfectly round */
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  /* Center the close icon inside the circle. */
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Styling the background and border. */
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0; /* Removing internal paddings from the button */
+  padding: 0;
   cursor: pointer;
-  /* Smooth hover transitions */
   transition:
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* Mouseover effect */
+
 .modal-close-btn:hover,
 .modal-close-btn:focus {
   background-color: #404bbf;
   border: none;
-  fill: #ffffff; /* The X icon becomes white */
 }
 
 .close-icon {
@@ -1050,13 +924,11 @@ width: 453px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Change icon color when hovering over the button */
-.modal-close-btn:hover .modal-close-icon,
-.modal-close-btn:focus .modal-close-icon {
+.modal-close-btn:hover .close-icon,
+.modal-close-btn:focus .close-icon {
   fill: #ffffff;
 }
 
-/* --- Form Elements Focus --- */
 .modal-input {
   width: 100%;
   height: 40px;
@@ -1085,9 +957,8 @@ width: 453px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* --- Textarea --- */
 .modal-policy-label {
-  display: flex; /* Aligns the icon and text in a row */
+  display: flex;
   align-items: center;
   font-size: 12px;
   line-height: 1.17;
@@ -1110,10 +981,8 @@ width: 453px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  /* Makes the background transparent */
   background-color: transparent;
   fill: transparent;
-  /* Adding smooth transition */
   transition:
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1127,10 +996,11 @@ width: 453px;
 .modal-checkbox:checked + .modal-policy-label .custom-checkbox-icon {
   background-color: #404bbf;
   border: none;
+  fill: #f4f4fd;
 }
 
-.modal-checkbox:checked + .modal-policy-label .custom-checkbox-icon {
-  fill: #f4f4fd; /* The checkmark turns white and reveals itself */
+.modal-checkbox:checked + .modal-policy-label .checkbox-icon {
+  fill: #f4f4fd;
 }
 
 .modal-title {
@@ -1160,26 +1030,11 @@ width: 453px;
   position: relative;
 }
 
-.modal-input:focus {
-  border-color: #4d5ae5;
-}
-
-/* Change icon color on input focus */
-.modal-input:focus + .input-icon {
-  fill: #4d5ae5;
-}
-
-/* ---Comments field ----*/
-
-.form-field {
-  margin-bottom: 16px;
-}
-
 .modal-comment {
   display: block;
   width: 100%;
   height: 120px;
-  resize: none; /* Requirement C11 (No stretching)*/
+  resize: none;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -1197,13 +1052,11 @@ width: 453px;
 }
 
 .modal-checkbox-wrap {
-  /* Spacing from the privacy policy text to the Send button*/
   margin-bottom: 24px;
 }
 
 .modal-submit-btn {
   display: block;
-  /* Center the button horizontally */
   margin: 0 auto;
   min-width: 169px;
   height: 56px;
@@ -1216,6 +1069,11 @@ width: 453px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-submit-btn:hover,
+.modal-submit-btn:focus {
+  background-color: #404bbf;
 }
 
 .modal-checkbox:focus + .modal-policy-label .custom-checkbox-icon {
@@ -1236,14 +1094,7 @@ width: 453px;
   }
 }
 
-/*---- Mobile menu styles--- */
-
-/* Hide menu (tablet & desktop).*/
-@media screen and (min-width: 768px) {
-  .mobile-menu {
-    display: none;
-  }
-}
+/* ---- Mobile Menu ---- */
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -1251,11 +1102,9 @@ width: 453px;
   width: 100%;
   height: 100%;
   background-color: #fff;
-
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-
   transition:
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1265,6 +1114,12 @@ width: 453px;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
 }
 
 .mobile-menu-container {
@@ -1280,7 +1135,6 @@ width: 453px;
   margin-bottom: auto;
 }
 
-/* Contacts and socials are pinned to the bottom. */
 .mob-contacts-wrap {
   margin-top: auto;
 }
@@ -1292,17 +1146,13 @@ width: 453px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
+  background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e7e9fc;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
-
-  /* Smooth hover transition */
   transition:
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1310,17 +1160,15 @@ width: 453px;
 
 .close-icon-btn:hover,
 .close-icon-btn:focus {
-  background-color: #404bbf; /* Turns dark blue when hovered */
+  background-color: #404bbf;
   border: none;
-  fill: #fff; /* The icon inside turns white */
 }
 
 .close-icon-btn:hover .menu-close-icon,
 .close-icon-btn:focus .menu-close-icon {
-  fill: #fff; /* Color on hover */
+  fill: #fff;
 }
 
-/* Styles for the close icon itself */
 .menu-close-icon {
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1342,11 +1190,6 @@ width: 453px;
 
 .mob-nav-link.current {
   color: #404bbf;
-}
-
-/* Contacts and socials networks are pinned to the bottom */
-.mob-contacts-wrap {
-  margin-top: auto;
 }
 
 .mobile-contacts-list {
@@ -1374,62 +1217,22 @@ width: 453px;
   gap: 40px;
 }
 
-/* Circle wrapper*/
 .mob-social-link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
   height: 40px;
-  background-color: #4d5ae5; 
-  border-radius: 50%; /* Make it round */
+  background-color: #4d5ae5;
+  border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Hover and click effects */
 .mob-social-link:hover,
 .mob-social-link:focus {
   background-color: #404bbf;
 }
 
-/* The SVG icon itself inside the circle. Coloring in white */
-
 .mobile-social-icon {
   fill: #f4f4fd;
-}
-.social-icons-list {
-display: flex;
-justify-content: center;
-gap: 24px;
-padding: 0;
-margin: 0;
-list-style: none;
-}
-
-.team-item-icon {
-flex: none;
-min-width: 40px;
-min-height: 40px;
-}
-
-.team-icon-link {
-width: 40px;
-height: 40px;
-background-color: #4d5ae5;
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.team-icon-link:hover,
-.team-icon-link:focus {
-background-color: #404bbf;
-}
-
-.team-icon {
-fill: #f4f4fd;
-width: 16px;
-height: 16px;
 }
